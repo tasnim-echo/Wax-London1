@@ -67,6 +67,60 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+
+                {% if link.title == 'New' %}
+                  <div class="mega-menu-images">
+                    <div class="mega-menu-card">
+                      <div class="mega-menu-image">
+                        <img src="https://waxlondon.com/cdn/shop/files/Nav_Image_7_ee20e98a-ac67-4059-8686-e7fbb61d3928_315x230@2x.jpg?v=1778146755">
+                      </div>
+                      <p class="mega-menu-image-text">Shop Our Summer 26 Collection</p>
+                    </div>
+
+                    <div class="mega-menu-card">
+                      <div class="mega-menu-image">
+                        <img src="https://waxlondon.com/cdn/shop/files/Nav_Image_6_a9208fdb-194e-4edc-b417-4210f36141df_315x230@2x.jpg?v=1778146784">
+                      </div>
+                      <p class="mega-menu-image-text">Shop Short Sleeve Shirts</p>
+                    </div>
+                  </div>
+                {% endif %}
+
+                {% if link.title == 'Clothing' %}
+                  <div class="mega-menu-images">
+                    <div class="mega-menu-card">
+                      <div class="mega-menu-image">
+                        <img src="https://waxlondon.com/cdn/shop/files/Nav_Image_5_9c1a4406-33b7-4721-9069-4ec6fcae3a3c_315x230@2x.jpg?v=1779462759">
+                      </div>
+                      <p class="mega-menu-image-text">Shop The Holiday Edit</p>
+                    </div>
+
+                    <div class="mega-menu-card">
+                      <div class="mega-menu-image">
+                        <img src="https://waxlondon.com/cdn/shop/files/Nav_Image_4_f9b89b6b-54ff-4443-b57c-651dbfa8918d_315x230@2x.jpg?v=1778146916">
+                      </div>
+                      <p class="mega-menu-image-text">Shop Summer Knitwear</p>
+                    </div>
+                  </div>
+                {% endif %}
+
+                {% if link.title == 'SS shirts' %}
+                  <div class="mega-menu-images">
+                    <div class="mega-menu-card">
+                      <div class="mega-menu-image">
+                        <img src="https://waxlondon.com/cdn/shop/files/Nav_Image_3_6877e997-af80-48a4-9e44-683738e9c59f_315x230@2x.jpg?v=1778495533">
+                      </div>
+                      <p class="mega-menu-image-text">Shop All Short Sleeve Shirts</p>
+                    </div>
+
+                    <div class="mega-menu-card">
+                      <div class="mega-menu-image">
+                        <img src="https://waxlondon.com/cdn/shop/files/Nav_Image_8_c3eaa173-b7d7-4a06-9035-029286c6ffa6_315x230@2x.jpg?v=1778495566">
+                      </div>
+                      <p class="mega-menu-image-text">Shop Knitted Shirts</p>
+                    </div>
+                  </div>
+                {% endif %}
               </div>
             </details>
           </header-menu>
@@ -92,3 +146,74 @@
     {%- endfor -%}
   </ul>
 </nav>
+
+<style>
+  .mega-menu__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: clamp(20px, 3vw, 60px);
+    padding: clamp(20px, 3vw, 50px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: rgb(var(--color-background));
+    z-index: 50;
+    overflow: hidden;
+  }
+
+  .mega-menu__list {
+    flex: 1;
+    display: flex;
+    gap: clamp(20px, 3vw, 60px);
+    flex-wrap: nowrap;
+  }
+
+  .mega-menu__list > li {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mega-menu__link--level-2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    font-size: clamp(12px, 1vw, 14px);
+  }
+
+  .mega-menu__list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .mega-menu__link {
+    font-size: clamp(11px, 0.9vw, 13px);
+    white-space: nowrap;
+  }
+
+  .mega-menu-images {
+    display: flex;
+    gap: clamp(10px, 1.5vw, 20px);
+    flex-shrink: 0;
+  }
+
+  .mega-menu-image {
+    width: clamp(180px, 16vw, 272px);
+    aspect-ratio: 1 / 1;
+  }
+  .mega-menu-image-text {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+  }
+
+  .mega-menu-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>
