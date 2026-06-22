@@ -106,6 +106,16 @@
                   >
                 {%- endif -%}
               </div>
+
+              <div class="product-sizes">
+                {% for option in card_product.options_with_values %}
+                  {% if option.name == 'Size' %}
+                    {% for value in option.values %}
+                      <span>{{ value }}</span>
+                    {% endfor %}
+                  {% endif %}
+                {% endfor %}
+              </div>
             </div>
           {%- endif -%}
           <div class="card__content">
@@ -160,6 +170,7 @@
                 aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }}{% if card_product.available == false or card_product.compare_at_price > card_product.price %} Badge-{{ section_id }}-{{ card_product.id }}{% endif %}"
               >
                 {{ card_product.title | escape }}
+                {% comment %} {{ card_product.options_with_values | json }} {% endcomment %}
               </a>
             </h3>
             <div class="card-information">
