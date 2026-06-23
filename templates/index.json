@@ -12,59 +12,51 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_1": "Shop Short Sleeve Shirts",
+            "button_link_1": "#",
+            "button_style_secondary_1": false,
+            "button_label_2": "Shop Spring/Summer 26",
+            "button_link_2": "#",
             "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "heading",
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/banner-image.webp",
         "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "image_height": "medium",
         "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "collection": "hydrogen",
+        "products_to_show": 4,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -72,13 +64,145 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_nCNBbA": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons_ganNqC": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Suits & Tailoring",
+            "button_link_1": "#",
+            "button_style_secondary_1": false,
+            "button_label_2": "View The Campaign",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_ganNqC"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/shop_suit_banner.webp",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "featured_collection_UTUxGG": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "pants",
+        "products_to_show": 4,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "product_category_NRCgDG": {
+      "type": "product-category",
+      "blocks": {
+        "item_iiJVk9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/product_category_image1.webp",
+            "title": "Shirts",
+            "button_text": "Shop Now",
+            "link": ""
+          }
+        },
+        "item_AjdKQN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/product_category_image2.webp",
+            "title": "Knitshirts",
+            "button_text": "Shop Now",
+            "link": "#"
+          }
+        },
+        "item_MVgTQL": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/product_category_image3.webp",
+            "title": "T-Shirts",
+            "button_text": "Shop Now",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "item_iiJVk9",
+        "item_AjdKQN",
+        "item_MVgTQL"
+      ],
+      "name": "Image Grid Section",
+      "settings": {}
+    },
+    "featured_collection_Qjxpe7": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "colorful",
+        "products_to_show": 4,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "image_banner_nCNBbA",
+    "featured_collection_UTUxGG",
+    "product_category_NRCgDG",
+    "featured_collection_Qjxpe7"
   ]
 }
