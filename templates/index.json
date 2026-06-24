@@ -315,6 +315,89 @@
         "padding_top": 100,
         "padding_bottom": 0
       }
+    },
+    "product_blog_zRBXKk": {
+      "type": "product-blog",
+      "blocks": {
+        "slide_akKNG8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/blog_0_img.webp",
+            "heading": "Bestsellers For A Reason",
+            "text": "Some pieces earn their place over time. Others become instant bestsellers. These are the styles people are coming back to season after season",
+            "button_text": "Read More",
+            "link": "#",
+            "text_limit": 150
+          }
+        },
+        "slide_YLq3T8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/blog_1_img.webp",
+            "heading": "Weddings In Wax: Styled By You",
+            "text": "From the ceremony to the last dance, we're proud to see our tailoring worn at weddings across the world by grooms, guests and everyone in between...",
+            "button_text": "Read More",
+            "link": "#",
+            "text_limit": 100
+          }
+        },
+        "slide_KHh8Kh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/blog_2_img.webp",
+            "heading": "Nine Short-Sleeve Shirts You'll Wear All Summer",
+            "text": "Different styles, fabrications and colours mean there's at least one that'll tick every box...",
+            "button_text": "Read More",
+            "link": "#",
+            "text_limit": 150
+          }
+        },
+        "slide_kAetTq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/blog_3_img.webp",
+            "heading": "Tailoring: The Art Of Ease",
+            "text": "Wax suiting is all about offering you the art of ease: ease in comfort, ease in styling, ease in versatility - it runs through everything we make...",
+            "button_text": "Read More",
+            "link": "#",
+            "text_limit": 150
+          }
+        },
+        "slide_tHFYtE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/blog_4_img.webp",
+            "heading": "The Best T-Shirts To Add To Your Rotation",
+            "text": "A great tee deserves its moment, and with summer here, that moment has arrived...",
+            "button_text": "Read More",
+            "link": "#",
+            "text_limit": 150
+          }
+        },
+        "slide_Pk6Tjm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/blog_5_img.jpg",
+            "heading": "Sabah Has Landed At Wax",
+            "text": "Summer's best shoe has made its way to Wax. Known for their craftsmanship, Sabah has quietly built one of the most loyal followings in menswear...",
+            "button_text": "Read More",
+            "link": "#",
+            "text_limit": 150
+          }
+        }
+      },
+      "block_order": [
+        "slide_akKNG8",
+        "slide_YLq3T8",
+        "slide_KHh8Kh",
+        "slide_kAetTq",
+        "slide_tHFYtE",
+        "slide_Pk6Tjm"
+      ],
+      "name": "Article Slider",
+      "settings": {
+        "heading": "DISCOVER MORE"
+      }
     }
   },
   "order": [
@@ -327,6 +410,7 @@
     "image_banner_hDNFjt",
     "featured_collection_LzTD69",
     "image_banner_gw7et6",
-    "featured_collection_Q7zCNB"
+    "featured_collection_Q7zCNB",
+    "product_blog_zRBXKk"
   ]
 }

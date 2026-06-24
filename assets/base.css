@@ -1674,12 +1674,42 @@ details[open] > .share-button__fallback {
   right: var(--inputs-border-width);
   bottom: var(--inputs-border-width);
   left: var(--inputs-border-width);
-  border: 0.1rem solid transparent;
-  border-radius: var(--inputs-radius);
+  border: 0.1rem solid (var(--color-foreground));
+  border-radius: 60px;
   box-shadow: 0 0 0 var(--inputs-border-width)
     rgba(var(--color-foreground), var(--inputs-border-opacity));
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
+}
+
+/* my-custom */
+.newsletter-submit {
+  background: rgba(51, 51, 51);
+  border-radius: 60px;
+  border-style: none;
+  border-color: #000000;
+  border-width: 0px;
+  color: #ffffff;
+  font-family:
+    Maison Neue,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 1;
+  font-style: normal;
+  white-space: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  word-break: break-word;
+  align-self: flex-end;
+  cursor: pointer;
+  height: 46px;
+  width: 100%;
 }
 
 .select__select {
@@ -1696,10 +1726,10 @@ details[open] > .share-button__fallback {
 .customer .field:hover.field:after,
 .customer select:hover.select:after,
 .localization-form__select:hover.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
-    rgba(var(--color-foreground), var(--inputs-border-opacity));
-  outline: 0;
-  border-radius: var(--inputs-radius);
+  /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
+    rgba(var(--color-foreground), var(--inputs-border-opacity)); */
+  /* outline: 0; */
+  /* border-radius: var(--inputs-radius); */
 }
 
 .field__input:focus-visible,

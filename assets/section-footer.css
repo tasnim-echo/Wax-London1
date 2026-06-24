@@ -1,3 +1,59 @@
+.divider_custom {
+  height: 1px;
+  background: #d8d8d8;
+  margin: 10px;
+  display: block !important;
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 60px; */
+  padding: 20px 10px 0 10px;
+}
+.custom-footer .footer-logo p {
+  margin: 0;
+}
+
+.footer-block {
+  flex: 0 1 auto;
+}
+
+.footer-logo {
+  flex-basis: 400px;
+}
+
+.footer-subText {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.footer-column h3 {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  line-height: 22px;
+}
+
 .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
@@ -9,6 +65,28 @@
 .footer__content-top {
   padding-bottom: 5rem;
   display: block;
+}
+.footer__content-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-image: url(//waxlondon.com/cdn/shop/files/Desktop_Footer_b51918fe-c8cc-41d4-a5b6-69a94fe281a5.jpg?v=1778146588);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  min-height: 307px;
+
+  margin-inline: 10px;
+}
+
+.footer-top-tc {
+  color: #fff;
+  text-align: end;
+  margin-right: 20px;
+}
+.footer-top-tc a {
+  color: #fff;
 }
 
 @media screen and (max-width: 749px) {
@@ -41,8 +119,8 @@
 }
 
 .footer__content-bottom {
-  border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
-  padding-top: 3rem;
+  /* border-top: solid 0.1rem rgba(var(--color-foreground), 0.08); */
+  /* padding-top: 3rem; */
 }
 
 .footer__content-bottom:only-child {
@@ -93,9 +171,9 @@
 
 .footer__column--info {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -128,7 +206,7 @@
 .footer-block--newsletter {
   display: flex;
   align-items: flex-end;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   gap: 1rem;
 }
 
@@ -145,7 +223,7 @@
 @media screen and (min-width: 750px) {
   .footer-block--newsletter {
     flex-wrap: nowrap;
-    justify-content: center;
+    /* justify-content: center; */
   }
 }
 
@@ -153,6 +231,7 @@
   margin-bottom: 2rem;
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
+  color: #fff;
 }
 
 @media screen and (min-width: 990px) {
@@ -176,8 +255,10 @@
 }
 
 .footer-block__newsletter {
-  text-align: center;
+  text-align: start;
+  margin-left: 20px;
   flex-grow: 1;
+  max-width: 45rem;
 }
 
 .newsletter-form__field-wrapper {
@@ -196,7 +277,8 @@
     margin: 0;
   }
 
-  .footer-block__newsletter:not(:only-child) .newsletter-form__message--success {
+  .footer-block__newsletter:not(:only-child)
+    .newsletter-form__message--success {
     left: auto;
   }
 
@@ -296,7 +378,8 @@
 }
 
 @media screen and (min-width: 750px) {
-  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center) .footer__copyright {
+  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center)
+    .footer__copyright {
     text-align: right;
   }
 }
@@ -420,7 +503,9 @@
   text-align: center;
 }
 
-.footer-block:only-child > .footer-block__brand-info > .footer-block__image-wrapper {
+.footer-block:only-child
+  > .footer-block__brand-info
+  > .footer-block__image-wrapper {
   margin-left: auto;
   margin-right: auto;
 }
@@ -430,7 +515,9 @@
   height: auto;
 }
 
-.footer-block:only-child .footer-block__brand-info .footer__list-social.list-social {
+.footer-block:only-child
+  .footer-block__brand-info
+  .footer__list-social.list-social {
   justify-content: center;
 }
 
@@ -462,7 +549,7 @@
 }
 
 .policies li::before {
-  content: '\00B7';
+  content: "\00B7";
   padding: 0 0.8rem;
 }
 
