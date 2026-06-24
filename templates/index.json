@@ -195,6 +195,126 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "image_banner_hDNFjt": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons_whxfTe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop The Edit",
+            "button_link_1": "#",
+            "button_style_secondary_1": false,
+            "button_label_2": "Shop Linen",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_whxfTe"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/holiday_edit_banner.webp",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "featured_collection_LzTD69": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "colorful",
+        "products_to_show": 4,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_gw7et6": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons_Px898i": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop The Edit",
+            "button_link_1": "#",
+            "button_style_secondary_1": false,
+            "button_label_2": "Shop Linen",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_Px898i"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/holiday_edit_banner.webp",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "featured_collection_Q7zCNB": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "casual",
+        "products_to_show": 4,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -203,6 +323,10 @@
     "image_banner_nCNBbA",
     "featured_collection_UTUxGG",
     "product_category_NRCgDG",
-    "featured_collection_Qjxpe7"
+    "featured_collection_Qjxpe7",
+    "image_banner_hDNFjt",
+    "featured_collection_LzTD69",
+    "image_banner_gw7et6",
+    "featured_collection_Q7zCNB"
   ]
 }
