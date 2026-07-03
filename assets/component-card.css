@@ -440,13 +440,37 @@
   .card-wrapper:hover .media.media--hover-effect > img + img {
     opacity: 1;
     transition: transform var(--duration-long) ease;
-    transform: scale(1.03);
+    /* transform: scale(1.03); */
   }
 
   .underline-links-hover:hover a {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
   }
+}
+
+/* Model View */
+body.model-view .media.media--hover-effect > .primary-image {
+  opacity: 0;
+}
+
+body.model-view .media.media--hover-effect > .secondary-image {
+  opacity: 1;
+}
+
+/* Hover while Model View is ON */
+body.model-view
+  .card-wrapper:hover
+  .media.media--hover-effect
+  > .primary-image {
+  opacity: 1 !important;
+}
+
+body.model-view
+  .card-wrapper:hover
+  .media.media--hover-effect
+  > .secondary-image {
+  opacity: 0 !important;
 }
 
 .card--standard.card--media .card__inner .card__information,

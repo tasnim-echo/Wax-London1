@@ -753,6 +753,20 @@
   </product-component>
 </product-info>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const productHandle = '{{ product.handle }}';
+
+    console.log('Product Handle:', productHandle); // Debugging line
+
+    let viewed = JSON.parse(sessionStorage.getItem('recentlyViewed')) || [];
+    viewed = viewed.filter((handle) => handle !== productHandle);
+    viewed.unshift(productHandle);
+    viewed = viewed.slice(0, 10);
+    sessionStorage.setItem('recentlyViewed', JSON.stringify(viewed));
+  });
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",

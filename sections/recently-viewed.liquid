@@ -1,0 +1,96 @@
+<div class="recently-viewed">
+  <div class="recently-viewed-header">
+    <h2>Recently Viewed</h2>
+
+    <div class="recently-viewed-nav">
+      <button class="recently-prev">&#8592;</button>
+
+      <button class="recently-next">&#8594;</button>
+    </div>
+  </div>
+
+  <div class="swiper recently-viewed-slider">
+    <div class="swiper-wrapper" id="recently-viewed-wrapper"></div>
+  </div>
+</div>
+
+<style>
+  .recently-viewed {
+    margin: 0 90px;
+  }
+  .recently-viewed-card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .recently-viewed-card h3 {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+
+  .recently-viewed-card p {
+    margin-top: 6px;
+    font-weight: 600;
+  }
+
+  .recently-viewed-nav .swiper-button-disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const recentlySwiper = new Swiper('.recently-viewed-slider', {
+    slidesPerView: 4,
+    slidesPerGroup: 4, // Move 4 cards at a time
+    spaceBetween: 24,
+
+    navigation: {
+      nextEl: '.recently-next',
+      prevEl: '.recently-prev',
+    },
+
+    watchOverflow: true,
+  });
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    const viewed = JSON.parse(sessionStorage.getItem('recentlyViewed')) || [];
+
+    if (viewed) {
+      console.log(viewed);
+    } else {
+      console.log('No recently viewed products found.');
+    }
+
+    const wrapper = document.getElementById('recently-viewed-wrapper');
+
+    for (const handle of viewed) {
+      try {
+        const response = await fetch(`/products/${handle}.js`);
+        const product = await response.json();
+
+        wrapper.innerHTML += `
+      <div class="swiper-slide">
+        <div class="recently-viewed-card">
+
+          <a href="/products/${product.handle}">
+            <img
+              src="${product.featured_image}"
+              alt="${product.title}"
+            >
+          </a>
+
+          <h3>${product.title}</h3>
+
+          <p>$${(product.price / 100).toFixed(2)}</p>
+
+        </div>
+      </div>
+    `;
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  });
+</script>
